@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Pokecon</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -18,28 +18,30 @@
         </form>
 
         <?php
-
+            
             try{
 
-                $ipserver = "82.165.50.104/Pokecon";
+                $ipserver = "82.165.50.104";
                 $nomBase = "PokeUsers";
                 $loginPriv = "userweb";
                 $passPriv = "userweb";
-
-                $pdo = new PDO('mysql:host='.$ipserver.';dbname=Comba'.$nomBase.'', $loginPriv, $passPriv);
-
+                
+                $pdo = new PDO('mysql:host='.$ipserver.';dbname='.$nomBase.'', $loginPriv, $passPriv);
             } catch (Exception $error) {
-                $error->getMessage();
+                echo($error->getMessage());
             }
 
             if(isset($_POST['connexion'])){
-
-                $RequetSql = "SELECT * FROM 'User' 
-                    WHERE 'login' = '".$_POST['login']."' 
-                    AND 'pass' = '".$_POST['pass']."' ;";
+                $RequetSql = "SELECT * FROM User 
+                    WHERE login = '".$_POST['login']."' 
+                    AND passwd = '".$_POST['pass']."' ;";
                 
-                $res = $pdo->query($RequetSql);
-
+                try{
+                    $res = $pdo->query($RequetSql);
+                } catch (Exception $error) {
+                    echo($error->getMessage());
+                }
+                
                 if($res->rowCount()>0){
                     echo "oui";
                 }else{
