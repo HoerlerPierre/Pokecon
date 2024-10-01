@@ -49,6 +49,14 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/home/combat', (req, res) => {
+    res.sendFile(__dirname + '/home/combat/combat.html');
+});
+
+app.get('/home/casino', (req, res) => {
+    res.sendFile(__dirname + '/home/casino/casino.html');
+});
+
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Serveur démarré sur le port ${PORT}`);
