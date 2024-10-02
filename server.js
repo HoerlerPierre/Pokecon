@@ -81,6 +81,13 @@ const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Serveur démarré sur le port ${PORT}`);
 });
-app.get('/home/shop', (req, res) => {
+
+app.get('/home/shop/pcard', (req, res) => {
     res.sendFile(__dirname + '/home/shop/pcard.html');
 });
+
+app.get('/home/css/menu', (req, res) => {
+    res.sendFile(__dirname + '/public/css/menu/navbar.html');
+});
+
+

@@ -22,91 +22,15 @@ MAQUAIRE Matthieu | présent
         <link rel="stylesheet" href="/css/menu/navbar.css" type="text/css">
     </head>
     <body>
-        
-        <!-- Navbar -->
-        <nav id="navbar">
-            <ul class="navbar-items flexbox-col">
-        
-              <li class="navbar-logo flexbox-left">
-                <a class="navbar-item-inner flexbox" href="/home">
-                  <img class="icone" src="https://i.imgur.com/XYRGcUZ.jpeg">
-                </a>
-              </li>
-        
-        
-              <li class="navbar-item flexbox-left">
-                <a href="/home/combat" class="navbar-item-inner flexbox-left">
-                  <div class="navbar-item-inner-icon-wrapper flexbox">
-                    <ion-icon name="search-outline"></ion-icon>
-                  </div>
-                  <span class="link-text">Combat</span>
-                </a>
-              </li>
-        
-        
-              <li class="navbar-item flexbox-left">
-                <a class="navbar-item-inner flexbox-left">
-                  <div class="navbar-item-inner-icon-wrapper flexbox">
-                    <ion-icon name="home-outline"></ion-icon>
-                  </div>
-                  <span class="link-text">Inventaire</span>
-                </a>
-              </li>
-        
-        
-              <li class="navbar-item flexbox-left">
-                <a class="navbar-item-inner flexbox-left" href="/home/casino">
-                  <div class="navbar-item-inner-icon-wrapper flexbox">
-                    <ion-icon img="/img/ico/casino_ico.PNG"></ion-icon>
-                  </div>
-                  <span class="link-text">Casino</span>
-                </a>
-              </li>
-        
-        
-              <li class="navbar-item flexbox-left">
-                <a class="navbar-item-inner flexbox-left" href="/home/shop/">
-                  <div class="navbar-item-inner-icon-wrapper flexbox">
-                    <ion-icon name="pie-chart-outline"></ion-icon>
-                  </div>
-                  <span class="link-text">Shop</span>
-                </a>
-              </li>
-        
-        
-              <li class="navbar-item flexbox-left">
-                <a class="navbar-item-inner flexbox-left">
-                  <div class="navbar-item-inner-icon-wrapper flexbox">
-                    <ion-icon name="people-outline"></ion-icon>
-                  </div>
-                  <span class="link-text">Social</span>
-                </a>
-              </li>
-        
-        
-              <li class="navbar-item flexbox-left">
-                <a class="navbar-item-inner flexbox-left">
-                  <div class="navbar-item-inner-icon-wrapper flexbox">
-                    <ion-icon name="chatbubbles-outline"></ion-icon>
-                  </div>
-                  <span class="link-text">Support</span>
-                </a>
-              </li>
-        
-        
-              <li class="navbar-item flexbox-left">
-                <a class="navbar-item-inner flexbox-left">
-                  <div class="navbar-item-inner-icon-wrapper flexbox">
-                    <ion-icon name="settings-outline"></ion-icon>
-                  </div>
-                  <span class="link-text">Settings</span>
-                </a>
-              </li>
-        
-              
-            </ul>
-          </nav>
-  
+      <div id="nav-placeholder"></div>
+      <script>
+        fetch('/home/css/menu')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading navigation:', error));
+      </script>
 
 
     </body>

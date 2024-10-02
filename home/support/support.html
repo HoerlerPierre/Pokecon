@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pokecon Combat</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/combat.css" type="text/css">
+        <link rel="stylesheet" href="/css/menu/navbar.css" type="text/css">
+    </head>
+    <body>
+      <div id="nav-placeholder"></div>
+      <script>
+        fetch('/home/css/menu')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading navigation:', error));
+      </script>
+
+    </body>
+</html>
