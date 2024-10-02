@@ -57,7 +57,30 @@ app.get('/home/casino', (req, res) => {
     res.sendFile(__dirname + '/home/casino/casino.html');
 });
 
+app.get('/home/shop', (req, res) => {
+    res.sendFile(__dirname + '/home/shop/shop.html');
+});
+
+app.get('/home/inventaire', (req, res) => {
+    res.sendFile(__dirname + '/home/inventaire/inventaire.html');
+});
+
+app.get('/home/social', (req, res) => {
+    res.sendFile(__dirname + '/home/social/social.html');
+});
+
+app.get('/home/support', (req, res) => {
+    res.sendFile(__dirname + '/home/support/support.html');
+});
+
+app.get('/home/setting', (req, res) => {
+    res.sendFile(__dirname + '/home/setting/setting.html');
+});
+
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Serveur démarré sur le port ${PORT}`);
+});
+app.get('/home/shop', (req, res) => {
+    res.sendFile(__dirname + '/home/shop/pcard.html');
 });
