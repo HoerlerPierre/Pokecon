@@ -90,4 +90,6 @@ app.get('/home/css/menu', (req, res) => {
     res.sendFile(__dirname + '/public/css/menu/navbar.html');
 });
 
-
+app.get('/home/shop/vente', (req, res) => {
+    res.sendFile(__dirname + '/home/shop/vente.html');
+});

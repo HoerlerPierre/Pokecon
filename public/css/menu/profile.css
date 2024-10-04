@@ -1,0 +1,61 @@
+.profile-menu{
+    top: 0%;
+    position: fixed;
+    right: 0%;
+    width: 300px;
+    height: 70px;
+    background-color: hsl(255, 12%, 12%);
+  }
+  
+  .profile-photo{
+    position: fixed;
+    right: 0%;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .icone-profile{
+    position: absolute;
+    top: 5px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .profile-name{
+    position: absolute;
+    right: 90px;
+    top: 20px;
+    width: 200px;
+    height: 30px; 
+  }
+  
+  .profile-text{
+    text-align: right;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .profile-pokedex{
+    background-color: hsl(255, 12%, 12%);
+    position: absolute;
+    right: 300px;
+    width: 70px;
+    height: 70px; 
+  }
+  
+  .profile-slot-1{
+    background-color: hsl(255, 12%, 12%);
+    position: absolute;
+    right: 370px;
+    width: 70px;
+    height: 70px; 
+  }
+  
+  .profile-slot-2{
+    background-color: hsl(255, 12%, 12%);
+    position: absolute;
+    right: 440px;
+    width: 10px;
+    height: 70px; 
+  }
+  

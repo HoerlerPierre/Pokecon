@@ -1,0 +1,44 @@
+#mid{
+margin-left: 25%;
+margin-right: 25%;
+margin-top: 30%;
+margin-bottom: 10%;
+}
+.noir
+{
+    position:absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 92%;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.blanc
+{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top:10px;
+    bottom: 100px;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.918);
+
+}
+.back {
+    background-image: url(https://www.fotobehang.com/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/1/w10388-small.jpg);
+    background-color: #cccccc;
+    height: 3000px;
+    max-height: 100%;
+    width: 3000px;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+  }
+
+
+
