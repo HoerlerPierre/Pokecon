@@ -9,13 +9,42 @@
         <link rel="stylesheet" href="/css/menu/navbar.css" type="text/css">
         <link rel="stylesheet" href="/css/shop.css" type="text/css">    
         <link rel="stylesheet" href="/css/pcard.css"type="text/css">
+        <script>
+            function faireUnFetch(){
+                fetch('/home/css/menu')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navigation:', error));
+
+             fetch('/home/shop/vente')
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById('nav-placeholder').innerHTML = data;
+         })
+         .catch(error => console.error('Error loading navigation:', error));
+         
+         }
+         
+         
+             </script>
     </head>
 
     <body>
         <div class="back"></div>
         <div id="shop"></div>
         <div id="nav-placeholder"></div>
+        <div id="bouton2">
+                 
+            <button onclick="faireUnFetch()" class="btn2 click2" style="" id="customBtn2">Vente</button>
+        
+    </div>
+        <div id="bouton1">
+            <button class="btn click1" style="" id="customBtn">Achat</button>
 
+    </div>
+       
             <script  >
                 fetch('/home/shop/pcard')
                 .then(response => response.text())

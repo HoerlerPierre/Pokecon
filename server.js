@@ -93,3 +93,15 @@ app.get('/home/css/menu', (req, res) => {
 app.get('/home/shop/vente', (req, res) => {
     res.sendFile(__dirname + '/home/shop/vente.html');
 });
+
+
+app.get('/data', (req, res) => {
+    connection.query('SELECT * FROM votre_table', (err, results) => {
+        if (err) {
+            console.error('Erreur lors de la récupération des données :', err);
+            res.status(500).send('Erreur lors de la récupération des données');
+            return;
+        }
+        res.json(results); // Envoyer les données en JSON
+    });
+});

@@ -4,69 +4,66 @@
     
     }
     @import url('https://fonts.googleapis.com/css2?Teko&display=swap');
-.btn {
-   position: absolute;
-cursor: pointer;
-border: 2px solid rgb(0, 0, 0);
-font-family: Teko;
-font-size: 35px;
-color: rgb(255, 255, 255);
-padding: 10px 30px;
-transition: 15ms;
-width: 335px;
-box-shadow: rgb(0, 0, 0) 0px 5px 25px 5px;
-border-radius: 50px;
-background: linear-gradient(21deg, rgb(20, 224, 61) 0%, rgb(25, 33, 179) 100%);
---hover-borderc: #000000;
---hover-bgc: #595555;
---hover-color: #ffffff;
-font-weight: 100;
-height: 70px;
-}
-
-.btn:hover{
-color: rgb(255, 255, 255);
-width: 337px;
-background: rgb(89, 85, 85) none repeat scroll 0% 0% / auto padding-box border-box;
-border-color: rgb(0, 0, 0);
-border-width: 2px;
-border-style: solid;
-}
-.btn2 {
-
-   cursor: pointer;
-   border:2px solid rgb(3, 0, 0);
-   font-family: "Teko";
-   font-size: 35px;
-   color: rgb(255, 255, 255);
-   padding: 10px 30px;
-   transition: 15ms;
-   width: 335px;
-   box-shadow: rgb(0, 0, 0) 0px 5px 25px 5px;
-   border-radius: 50px;
-   background: linear-gradient(21deg, rgb(33, 7, 12) 0%, rgb(252, 43, 43) 100%);
-   font-weight: 100;
-   --hover-bgc: #5c5a5a;
-   --hover-color: #ffffff;
-   --hover-borderc: #000000;
-height: 70px;
-   }
-   
-   .btn2:hover{
-   color: rgb(255, 255, 255);
-   width: 337px;
-   background: rgb(92, 90, 90) none repeat scroll 0% 0% / auto padding-box border-box;
-   border-color: rgb(0, 0, 0);
-   border-width: 2px;
-   border-style: solid;
-   }
+    @import url('https://fonts.googleapis.com/css2?Roboto&display=swap');
+    .btn {
+    cursor: pointer;
+    border: solid rgb(0, 0, 0);
+    font-family: "system-ui";
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding: 30px 30px;
+    transition: 31ms;
+    width: 520px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1px;
+    background: linear-gradient(90deg, rgb(32, 201, 55) 0%, rgb(8, 77, 24) 100%);
+    --hover-bgc: #46494d;
+    --hover-color: #ffffff;
+    --hover-borderc: #000000;
+    }
+    
+    .btn:hover{
+    color: rgb(255, 255, 255);
+    width: 520px;
+    background: rgb(70, 73, 77) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-style: solid;
+    }
+    .btn2{
+      cursor: pointer;
+      border: solid rgb(0, 0, 0);
+      font-family: "system-ui";
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+      padding: 30px 30px;
+      transition: 31ms;
+      width: 520px;
+      box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+      border-radius: 1px;
+      background: linear-gradient(90deg, rgb(252, 27, 27) 0%, rgb(117, 12, 12) 100%);
+      --hover-bgc: #46494d;
+      --hover-color: #ffffff;
+      --hover-borderc: #000000;
+      }
+      
+      .btn2:hover{
+      color: rgb(255, 255, 255);
+      width: 520px;
+      background: rgb(70, 73, 77) none repeat scroll 0% 0% / auto padding-box border-box;
+      border-color: rgb(0, 0, 0);
+      border-width: 2px;
+      border-style: solid;
+      }
    #bouton1{
       position: absolute;
-margin-top: 10px;
-margin-left: 55%;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 50%;
    }
    #bouton2{
       position: absolute;
-      margin-top:10px;
-      margin-left: 11%;
+      margin-top:0px;
+      margin-left: 50%;
+      margin-right: 0%;
    }
